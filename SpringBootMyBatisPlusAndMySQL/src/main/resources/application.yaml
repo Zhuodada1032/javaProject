@@ -11,10 +11,10 @@ spring:
 
 
 mybatis:
-#  MyBatis映射文件配置
+  #  MyBatis映射文件配置
   mapper-locations: classpath:mapper/*.xml
-#  type-aliases-package: com.zhuo..entity
-
+  #  别名的配置
+  type-aliases-package: com.zhuo.springboot_mybatis_plus_mysql.entity
 
 
 #MyBatis分页插件
@@ -26,8 +26,8 @@ pagehelper:
 
 
 
-#log4j2 文件地址
-#logging:
+  #log4j2 文件地址
+  #logging:
   config: classpath:log4j2.xml
 
 
