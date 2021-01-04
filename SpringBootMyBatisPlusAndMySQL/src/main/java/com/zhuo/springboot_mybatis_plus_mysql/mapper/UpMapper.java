@@ -8,6 +8,7 @@ public interface UpMapper {
 
     /**
      * 查询所有用户的所有信息
+     *
      * @return
      */
     List<Up> selectAllInfo();

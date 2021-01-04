@@ -1,5 +1,8 @@
 server:
   port: 8081  #数据库端口号
+  servlet:
+    context-path: /zhuo
+
 
 #  数据库连接驱动
 spring:
@@ -14,7 +17,7 @@ mybatis:
   #  MyBatis映射文件配置
   mapper-locations: classpath:mapper/*.xml
   #  别名的配置
-  type-aliases-package: com.zhuo.springboot_mybatis_plus_mysql.entity
+#  type-aliases-package: com.zhuo.springboot_mybatis_plus_mysql.entity
 
 
 #MyBatis分页插件
@@ -27,7 +30,7 @@ pagehelper:
 
 
   #log4j2 文件地址
-  #logging:
+  logging:
   config: classpath:log4j2.xml
 
 
