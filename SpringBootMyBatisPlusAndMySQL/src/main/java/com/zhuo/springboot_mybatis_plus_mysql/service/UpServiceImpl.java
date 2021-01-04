@@ -10,6 +10,7 @@ import java.util.List;
 
 
 @Service
+@Transactional(readOnly = true)//设置只读
 public class UpServiceImpl implements UpService {
 
 
@@ -20,4 +21,11 @@ public class UpServiceImpl implements UpService {
     public List<Up> getUpAllInfo() {
         return upMapper.selectList(null);
     }
+
+    @Override
+    public Up getUpInfoByUpId(String upId) {
+        return upMapper.selectById(upId);
+    }
+
+
 }

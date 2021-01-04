@@ -16,7 +16,5 @@ public interface UpMapper extends BaseMapper<Up> {
      * @return
      */
 
-    default List<Up> selectAllInfo() {
-        return null;
-    }
+    List<Up> selectAllInfo() ;
 }
