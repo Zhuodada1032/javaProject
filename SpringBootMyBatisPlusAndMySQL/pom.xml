@@ -70,6 +70,13 @@
             <version>2.1.4</version>
         </dependency>
 
+        <!--MyBatisPlus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.4.1</version>
+        </dependency>
+
         <!--模板引擎-->
         <!--        <dependency>-->
         <!--            <groupId>org.springframework.boot</groupId>-->

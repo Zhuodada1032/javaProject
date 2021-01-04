@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhuo.springboot_mybatis_test01.Mapper.UpMapper">
+<mapper namespace="com.zhuo.springboot_mybatis_plus_mysql.mapper.UpMapper">
 
     <!--查询测试查询所用的用户信息-->
     <select id="selectAllInfo" resultType="com.zhuo.springboot_mybatis_plus_mysql.entity.Up">

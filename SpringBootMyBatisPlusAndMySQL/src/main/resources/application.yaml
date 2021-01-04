@@ -6,6 +6,8 @@ server:
 
 #  数据库连接驱动
 spring:
+  application:
+    name: lastwhisper-mybatis-plus
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/blackBeaconPlus?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
@@ -13,11 +15,12 @@ spring:
     password: Zhuodada
 
 
+
 mybatis:
-  #  MyBatis映射文件配置
+#    MyBatis映射文件配置
   mapper-locations: classpath:mapper/*.xml
   #  别名的配置
-#  type-aliases-package: com.zhuo.springboot_mybatis_plus_mysql.entity
+  type-aliases-package: com.zhuo.springboot_mybatis_plus_mysql.entity
 
 
 #MyBatis分页插件
@@ -30,8 +33,11 @@ pagehelper:
 
 
   #log4j2 文件地址
-  logging:
+logging:
   config: classpath:log4j2.xml
 
+
+#mybatis-plus:
+#  config-location: classpath:mapper/*.xml
 
 

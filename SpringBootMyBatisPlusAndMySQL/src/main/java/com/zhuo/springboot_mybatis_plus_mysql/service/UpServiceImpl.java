@@ -12,11 +12,12 @@ import java.util.List;
 @Service
 public class UpServiceImpl implements UpService {
 
+
     @Resource
     private UpMapper upMapper;
 
     @Override
     public List<Up> getUpAllInfo() {
-        return upMapper.selectAllInfo();
+        return upMapper.selectList(null);
     }
 }
