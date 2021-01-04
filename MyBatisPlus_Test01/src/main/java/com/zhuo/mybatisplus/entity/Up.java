@@ -1,9 +1,7 @@
-package com.zhuo.springboot_mybatis_plus_mysql.entity;
+package com.zhuo.mybatisplus.entity;
 
-import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import org.apache.ibatis.annotations.MapKey;
 
 import java.util.Date;
 
@@ -13,7 +11,7 @@ public class Up {
     /**
      * 用户的id
      */
-    private String upid;
+    public String upid;
     /**
      * 用户的账号
      */

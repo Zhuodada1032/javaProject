@@ -10,7 +10,7 @@ import java.util.List;
 
 
 @Service
-@Transactional(readOnly = true)//设置只读
+//@Transactional(readOnly = true)//设置只读
 public class UpServiceImpl implements UpService {
 
 
